@@ -1,6 +1,6 @@
 FROM chainmapper/walletbase-bionic
-	
-ENV WALLET_URL=https://github.com/mceme/ImageCoin/releases/download/1.0.4/ImageCoin-linux-x64_86.tar.xz
+
+ENV WALLET_URL=https://github.com/mceme/ImageCoin/releases/download/1.0.6/imagecoin_linux86_64_70209.tar.xz
 
 RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 	&& cd /usr/local/bin \
@@ -8,7 +8,7 @@ RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 	&& mkdir -p /data/.imagecoincore
 
 #rpc port & main port
-EXPOSE 6999 6998
+EXPOSE 6666 6998
 
 ENV HOME /data
 
