@@ -1,6 +1,6 @@
 FROM chainmapper/walletbase-bionic
 
-ENV WALLET_URL=https://github.com/mceme/ImageCoin/releases/download/1.0.6/imagecoin_linux86_64_70209.tar.xz
+ENV WALLET_URL=https://github.com/mceme/ImageCoin/releases/download/1.0.7.1/imagecoin-linux-x86_64_70210.tar.xz
 
 RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 	&& cd /usr/local/bin \
