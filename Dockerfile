@@ -15,4 +15,4 @@ ENV HOME /data
 COPY start.sh /start.sh
 COPY gen_config.sh /gen_config.sh
 RUN chmod 777 /*.sh
-CMD /start.sh /data/.imagecoincore imagecoin.conf IMG ImageCoind
+CMD /start.sh imagecoin.conf IMG ImageCoind
