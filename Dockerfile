@@ -7,8 +7,8 @@ RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 	&& tar xvf /tmp/wallet.tar.gz \
 	&& mkdir -p /data/.imagecoincore
 
-#rpc port & main port
-EXPOSE 6666 6998
+#rpc port & main port & zmqport
+EXPOSE 6666 6998 5555
 
 ENV HOME /data
 
